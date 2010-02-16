@@ -26,4 +26,4 @@ ext/share
 *.o
 *.so
 *.bundle
-
+*.gemspec
