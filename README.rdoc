@@ -1,6 +1,6 @@
 = innoruby
 
-Description goes here.
+An interface to Embedded InnoDB.
 
 == Note on Patches/Pull Requests
  
