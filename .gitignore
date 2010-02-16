@@ -19,3 +19,11 @@ rdoc
 pkg
 
 ## PROJECT::SPECIFIC
+ext/Makefile
+ext/include
+ext/lib
+ext/share
+*.o
+*.so
+*.bundle
+
