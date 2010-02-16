@@ -5,7 +5,7 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "innoruby"
-    gem.summary = %Q{TODO: one-line summary of your gem}
+    gem.summary = "An interface to Embedded InnoDB"
     gem.description = %Q{TODO: longer description of your gem}
     gem.email = "osullivan.padraig@gmail.com"
     gem.homepage = "http://github.com/posulliv/innoruby"
