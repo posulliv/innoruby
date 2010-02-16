@@ -6,7 +6,7 @@ begin
   Jeweler::Tasks.new do |gem|
     gem.name = "innoruby"
     gem.summary = "An interface to Embedded InnoDB"
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.description = "An interface to Embedded InnoDB for Ruby using SWIG"
     gem.email = "osullivan.padraig@gmail.com"
     gem.homepage = "http://github.com/posulliv/innoruby"
     gem.authors = ["Padraig O'Sullivan"]
