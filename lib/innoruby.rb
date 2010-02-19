@@ -12,4 +12,5 @@ class InnoDB
 end
 
 require 'innoruby/integer'
+require 'innoruby/exceptions'
 require 'innoruby/innoruby'
