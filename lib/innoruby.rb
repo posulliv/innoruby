@@ -2,13 +2,14 @@
 =begin rdoc
 The generated SWIG module for accessing Embedded InnoDB's C API.
 =end
-module Innoruby
+module Rlibinnodb
 end
 
-require 'innoruby'
+require 'rlibinnodb'
 
 class InnoDB
-  Lib = Innoruby
+  Lib = Rlibinnodb
 end
 
 require 'innoruby/integer'
+require 'innoruby/innoruby'

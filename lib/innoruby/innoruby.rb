@@ -8,7 +8,7 @@ class InnoDB
   end
 
   def version()
-    @ver = ib_api_version()
+    @ver = Lib.ib_api_version
   end
 
 end

@@ -1,4 +1,4 @@
-%module innoruby
+%module rlibinnodb
 %{
 #include <embedded_innodb-1.0/innodb.h>
 %}

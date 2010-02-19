@@ -56,8 +56,8 @@ end
 
 if ENV['SWIG']
   puts "Running SWIG."
-  puts(cmd = "swig #{$includes} -ruby -autorename innoruby.i")
+  puts(cmd = "swig #{$includes} -ruby -autorename rlibinnodb.i")
   raise "'#{cmd}' failed" unless system(cmd)
 end
 
-create_makefile 'innoruby'
+create_makefile 'rlibinnodb'
