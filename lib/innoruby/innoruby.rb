@@ -16,6 +16,22 @@ class InnoDB
     @lock_wait.no_backtrace = true
     @deadlock= DeadLock.new
     @deadlock.no_backtrace = true
+    @dup_key = DuplicateKey.new
+    @dup_key.no_backtrace = true
+    @que_thr_susp = QueueThreadSuspended.new
+    @que_thr_susp.no_backtrace = true
+    @missing_history = MissingHistory.new
+    @missing_history.no_backtrace = true
+    @clus_not_found = ClusterNotFound.new
+    @clus_not_found.no_backtrace = true
+    @tab_not_found = TableNotFound.new
+    @tab_not_found.no_backtrace = true
+    @get_more_space = MustGetMoreFileSpace.new
+    @get_more_space.no_backtrace = true
+    @tab_being_used = TableInUse.new
+    @tab_being_used.no_backtrace = true
+    @too_big_rec = RecordTooBig.new
+    @too_big_rec.no_backtrace = true
   end
 
   def version()
@@ -56,6 +72,22 @@ class InnoDB
       raise @lock_wait, Lib.ib_strerror(ret)
     elsif ret == Lib::DB_DEADLOCK
       raise @deadlock, Lib.ib_strerror(ret)
+    elsif ret == Lib::DB_DUPLICATE_KEY
+      raise @dup_key, Lib.ib_strerror(ret)
+    elsif ret == Lib::DB_QUE_THR_SUSPENDED
+      raise @que_thr_susp, Lib.ib_strerror(ret)
+    elsif ret == Lib::DB_MISSING_HISTORY
+      raise @missing_history, Lib.ib_strerror(ret)
+    elsif ret == Lib::DB_CLSUTER_NOT_FOUND
+      raise @clus_not_found, Lib.ib_strerror(ret)
+    elsif ret == Lib::DB_TABLE_NOT_FOUND
+      raise @tab_not_found, Lib.ib_strerror(ret)
+    elsif ret == Lib::DB_MUST_GET_MORE_FILE_SPACE
+      raise @get_more_space, Lib.ib_strerror(ret)
+    elsif ret == Lib::DB_TABLE_IS_BEING_USED
+      raise @tab_being_used, Lib.ib_strerror(ret)
+    elsif ret == Lib::DB_TOO_BIG_RECORD
+      raise @too_big_rec, Lib.ib_strerror(ret)
     else
     end
   end

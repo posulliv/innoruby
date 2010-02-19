@@ -27,6 +27,15 @@ Superclass for all InnoDB runtime exceptions.
   class OutOfFileSpace < Error; self; end
   class LockWait < Error; self; end
   class DeadLock < Error; self; end
+  class DuplicateKey < Error; self; end
+  class QueueThreadSuspended < Error; self; end
+  class MissingHistory < Error; self; end
+  class ClusterNotFound < Error; self; end
+  class TableNotFound < Error; self; end
+  class MustGetMoreFileSpace < Error; self; end
+  class TableInUse < Error; self; end
+  class RecordTooBig < Error; self; end
+  class LockWaitTimeout < Error; self; end
 
 #:startdoc:
 end
