@@ -23,7 +23,6 @@ class InnoDB
   end
 
   # Start up an InnoDB database.
-  # Raises <b>InnoDB::OutOfMem</b> if we run out of memory.
   def startup()
     check_return_code(Lib.ib_startup("barracuda"))
   end
