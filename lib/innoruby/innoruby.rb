@@ -32,19 +32,40 @@ class InnoDB
     @tab_being_used.no_backtrace = true
     @too_big_rec = RecordTooBig.new
     @too_big_rec.no_backtrace = true
+    @file_per_table = false
   end
 
   def version()
     @ver = Lib.ib_api_version
   end
 
-  # Start up an InnoDB database.
+  # Start up an InnoDB instance.
   def startup()
     check_return_code(Lib.ib_startup("barracuda"))
   end
 
+  # Shut down an InnoDB instance.
   def shutdown()
     check_return_code(Lib.ib_shutdown())
+  end
+
+  def create_database(db_name)
+    check_return_code(Lib.ib_database_create(db_name))
+  end
+
+  def drop_database(db_name)
+    check_return_code(Lib.ib_database_drop(db_name))
+  end
+
+  def set_file_per_table(setting)
+    if @file_per_table != setting
+      @file_per_table = setting
+      if @file_per_table == true
+        check_return_code(Lib.ib_cfg_set_bool_on("file_per_table"))
+      else
+        check_return_code(Lib.ib_cfg_set_bool_off("file_per_table"))
+      end
+    end
   end
 
   def set_buffer_pool_size(buff_pool_size)
@@ -53,6 +74,10 @@ class InnoDB
 
   def set_data_file_path(path_name)
     check_return_code(Lib.ib_cfg_set_text("data_file_path", path_name))
+  end
+
+  def set_data_dir(path_name)
+    check_return_code(Lib.ib_cfg_set_text("data_home_dir", path_name))
   end
 
   private
@@ -78,7 +103,7 @@ class InnoDB
       raise @que_thr_susp, Lib.ib_strerror(ret)
     elsif ret == Lib::DB_MISSING_HISTORY
       raise @missing_history, Lib.ib_strerror(ret)
-    elsif ret == Lib::DB_CLSUTER_NOT_FOUND
+    elsif ret == Lib::DB_CLUSTER_NOT_FOUND
       raise @clus_not_found, Lib.ib_strerror(ret)
     elsif ret == Lib::DB_TABLE_NOT_FOUND
       raise @tab_not_found, Lib.ib_strerror(ret)
