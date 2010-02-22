@@ -32,6 +32,13 @@ class InnoDB
     @tab_being_used.no_backtrace = true
     @too_big_rec = RecordTooBig.new
     @too_big_rec.no_backtrace = true
+    @no_ref_row = NoReferencedRow.new
+    @no_ref_row.no_backtrace = true
+    @cannot_add_constraint = CannotAddConstraint.new
+    @cannot_add_constraint.no_backtrace = true
+    @corruption = Corruption.new
+    @corruption.no_backtrace = true
+    @too_big_rec.no_backtrace = true
     @file_per_table = false
   end
 
@@ -113,6 +120,12 @@ class InnoDB
       raise @tab_being_used, Lib.ib_strerror(ret)
     elsif ret == Lib::DB_TOO_BIG_RECORD
       raise @too_big_rec, Lib.ib_strerror(ret)
+    elsif ret == Lib::DB_NO_REFERENCED_ROW
+      raise @no_ref_row, Lib.ib_strerror(ret)
+    elsif ret == Lib::DB_CANNOT_ADD_CONSTRAINT
+      raise @cannot_add_constraint, Lib.ib_strerror(ret)
+    elsif ret == Lib::DB_CORRUPTION
+      raise @corruption, Lib.ib_strerror(ret)
     else
     end
   end

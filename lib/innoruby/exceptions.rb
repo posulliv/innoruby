@@ -36,6 +36,9 @@ Superclass for all InnoDB runtime exceptions.
   class TableInUse < Error; self; end
   class RecordTooBig < Error; self; end
   class LockWaitTimeout < Error; self; end
+  class NoReferencedRow < Error; self; end
+  class CannotAddConstraint < Error; self; end
+  class Corruption < Error; self; end
 
 #:startdoc:
 end
