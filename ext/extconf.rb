@@ -56,7 +56,7 @@ end
 
 if ENV['SWIG']
   puts "Running SWIG."
-  puts(cmd = "swig #{$includes} -ruby -autorename rlibinnodb.i")
+  puts(cmd = "swig #{$includes} -ruby rlibinnodb.i")
   raise "'#{cmd}' failed" unless system(cmd)
 end
 

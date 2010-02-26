@@ -2098,6 +2098,14 @@ SWIG_FromCharPtr(const char *cptr)
   return SWIG_FromCharPtrAndSize(cptr, (cptr ? strlen(cptr) : 0));
 }
 
+SWIGINTERN void TableSchema_add_column(TableSchema *self,char const *col_name,ib_col_type_t col_type,ib_col_attr_t col_attr,ib_u16_t client_type,ib_ulint_t len){
+    return ob_table_schema_add_col(self,
+                                   col_name,
+                                   col_type,
+                                   col_attr,
+                                   client_type,
+                                   len);
+  }
 swig_class cIb_col_meta_t;
 
 SWIGINTERN VALUE
@@ -6370,6 +6378,76 @@ free_Transaction(Transaction *arg1) {
 
 swig_class cTableSchema;
 
+SWIGINTERN VALUE
+_wrap_TableSchema_add_column(int argc, VALUE *argv, VALUE self) {
+  TableSchema *arg1 = (TableSchema *) 0 ;
+  char *arg2 = (char *) 0 ;
+  ib_col_type_t arg3 ;
+  ib_col_attr_t arg4 ;
+  ib_u16_t arg5 ;
+  ib_ulint_t arg6 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 ;
+  char *buf2 = 0 ;
+  int alloc2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  int val4 ;
+  int ecode4 = 0 ;
+  void *argp5 ;
+  int res5 = 0 ;
+  unsigned long val6 ;
+  int ecode6 = 0 ;
+  
+  if ((argc < 5) || (argc > 5)) {
+    rb_raise(rb_eArgError, "wrong # of arguments(%d for 5)",argc); SWIG_fail;
+  }
+  res1 = SWIG_ConvertPtr(self, &argp1,SWIGTYPE_p_ib_tbl_sch_struct, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), Ruby_Format_TypeError( "", "TableSchema *","add_column", 1, self )); 
+  }
+  arg1 = (TableSchema *)(argp1);
+  res2 = SWIG_AsCharPtrAndSize(argv[0], &buf2, NULL, &alloc2);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), Ruby_Format_TypeError( "", "char const *","add_column", 2, argv[0] ));
+  }
+  arg2 = (char *)(buf2);
+  ecode3 = SWIG_AsVal_int(argv[1], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), Ruby_Format_TypeError( "", "ib_col_type_t","add_column", 3, argv[1] ));
+  } 
+  arg3 = (ib_col_type_t)(val3);
+  ecode4 = SWIG_AsVal_int(argv[2], &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), Ruby_Format_TypeError( "", "ib_col_attr_t","add_column", 4, argv[2] ));
+  } 
+  arg4 = (ib_col_attr_t)(val4);
+  {
+    res5 = SWIG_ConvertPtr(argv[3], &argp5, SWIGTYPE_p_uint16_t,  0 );
+    if (!SWIG_IsOK(res5)) {
+      SWIG_exception_fail(SWIG_ArgError(res5), Ruby_Format_TypeError( "", "ib_u16_t","add_column", 5, argv[3] )); 
+    }  
+    if (!argp5) {
+      SWIG_exception_fail(SWIG_ValueError, Ruby_Format_TypeError("invalid null reference ", "ib_u16_t","add_column", 5, argv[3]));
+    } else {
+      arg5 = *((ib_u16_t *)(argp5));
+    }
+  }
+  ecode6 = SWIG_AsVal_unsigned_SS_long(argv[4], &val6);
+  if (!SWIG_IsOK(ecode6)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode6), Ruby_Format_TypeError( "", "ib_ulint_t","add_column", 6, argv[4] ));
+  } 
+  arg6 = (ib_ulint_t)(val6);
+  TableSchema_add_column(arg1,(char const *)arg2,arg3,arg4,arg5,arg6);
+  if (alloc2 == SWIG_NEWOBJ) free((char*)buf2);
+  return Qnil;
+fail:
+  if (alloc2 == SWIG_NEWOBJ) free((char*)buf2);
+  return Qnil;
+}
+
+
 #ifdef HAVE_RB_DEFINE_ALLOC_FUNC
 SWIGINTERN VALUE
 _wrap_TableSchema_allocate(VALUE self) {
@@ -7337,6 +7415,7 @@ SWIGEXPORT void Init_rlibinnodb(void) {
   SWIG_TypeClientData(SWIGTYPE_p_ib_tbl_sch_struct, (void *) &cTableSchema);
   rb_define_alloc_func(cTableSchema.klass, _wrap_TableSchema_allocate);
   rb_define_method(cTableSchema.klass, "initialize", _wrap_new_TableSchema, -1);
+  rb_define_method(cTableSchema.klass, "add_column", _wrap_TableSchema_add_column, -1);
   cTableSchema.mark = 0;
   cTableSchema.destroy = (void (*)(void *)) free_TableSchema;
   cTableSchema.trackObjects = 0;

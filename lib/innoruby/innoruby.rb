@@ -73,6 +73,12 @@ class InnoDB
     ret
   end
 
+  def begin_transaction(trx_level)
+    ret = Lib::Transaction.new
+    ret = Lib.ib_trx_begin(trx_level)
+    ret
+  end
+
   def set_file_per_table(setting)
     if @file_per_table != setting
       @file_per_table = setting
