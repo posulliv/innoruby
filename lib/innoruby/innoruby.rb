@@ -64,6 +64,15 @@ class InnoDB
     check_return_code(Lib.ib_database_drop(db_name))
   end
 
+  def create_table_schema(table_name)
+    ret = Lib::TableSchema.new
+    check_return_code(Lib.ib_table_schema_create(table_name, 
+                                                 ret,
+                                                 Lib::IB_TBL_COMPACT,
+                                                 0))
+    ret
+  end
+
   def set_file_per_table(setting)
     if @file_per_table != setting
       @file_per_table = setting
