@@ -1764,55 +1764,54 @@ int SWIG_Ruby_arity( VALUE proc, int minimal )
 
 #define SWIGTYPE_p_FILE swig_types[0]
 #define SWIGTYPE_p_char swig_types[1]
-#define SWIGTYPE_p_crsr_struct swig_types[2]
-#define SWIGTYPE_p_db_err swig_types[3]
-#define SWIGTYPE_p_double swig_types[4]
-#define SWIGTYPE_p_f_p_FILE_p_q_const__char_v_______int swig_types[5]
-#define SWIGTYPE_p_f_p_q_const__ib_col_meta_t_p_q_const__unsigned_char_unsigned_long_p_q_const__unsigned_char_unsigned_long__int swig_types[6]
-#define SWIGTYPE_p_f_p_void_p_q_const__char_enum_ib_col_type_t_unsigned_long_enum_ib_col_attr_t__int swig_types[7]
-#define SWIGTYPE_p_f_p_void_p_q_const__char_enum_ib_tbl_fmt_t_unsigned_long_int_int__int swig_types[8]
-#define SWIGTYPE_p_f_p_void_p_q_const__char_int__int swig_types[9]
-#define SWIGTYPE_p_f_p_void_p_q_const__char_unsigned_long__int swig_types[10]
-#define SWIGTYPE_p_f_p_void_p_q_const__char_unsigned_long_unsigned_long_int__int swig_types[11]
-#define SWIGTYPE_p_float swig_types[12]
-#define SWIGTYPE_p_ib_cfg_type_t swig_types[13]
-#define SWIGTYPE_p_ib_col_attr_t swig_types[14]
-#define SWIGTYPE_p_ib_col_meta_t swig_types[15]
-#define SWIGTYPE_p_ib_col_type_t swig_types[16]
-#define SWIGTYPE_p_ib_crsr_struct swig_types[17]
-#define SWIGTYPE_p_ib_idx_sch_struct swig_types[18]
-#define SWIGTYPE_p_ib_lck_mode_t swig_types[19]
-#define SWIGTYPE_p_ib_match_mode_t swig_types[20]
-#define SWIGTYPE_p_ib_schema_visitor_t swig_types[21]
-#define SWIGTYPE_p_ib_schema_visitor_version_t swig_types[22]
-#define SWIGTYPE_p_ib_shutdown_t swig_types[23]
-#define SWIGTYPE_p_ib_srch_mode_t swig_types[24]
-#define SWIGTYPE_p_ib_tbl_fmt_t swig_types[25]
-#define SWIGTYPE_p_ib_tbl_sch_struct swig_types[26]
-#define SWIGTYPE_p_ib_tpl_struct swig_types[27]
-#define SWIGTYPE_p_ib_trx_level_t swig_types[28]
-#define SWIGTYPE_p_ib_trx_state_t swig_types[29]
-#define SWIGTYPE_p_ib_trx_struct swig_types[30]
-#define SWIGTYPE_p_int swig_types[31]
-#define SWIGTYPE_p_int16_t swig_types[32]
-#define SWIGTYPE_p_int32_t swig_types[33]
-#define SWIGTYPE_p_int64_t swig_types[34]
-#define SWIGTYPE_p_int8_t swig_types[35]
-#define SWIGTYPE_p_p_ib_crsr_struct swig_types[36]
-#define SWIGTYPE_p_p_ib_idx_sch_struct swig_types[37]
-#define SWIGTYPE_p_p_ib_tbl_sch_struct swig_types[38]
-#define SWIGTYPE_p_p_ib_tpl_struct swig_types[39]
-#define SWIGTYPE_p_p_p_char swig_types[40]
-#define SWIGTYPE_p_p_void swig_types[41]
-#define SWIGTYPE_p_uint16_t swig_types[42]
-#define SWIGTYPE_p_uint32_t swig_types[43]
-#define SWIGTYPE_p_uint64_t swig_types[44]
-#define SWIGTYPE_p_uint8_t swig_types[45]
-#define SWIGTYPE_p_unsigned_char swig_types[46]
-#define SWIGTYPE_p_unsigned_long swig_types[47]
-#define SWIGTYPE_p_void swig_types[48]
-static swig_type_info *swig_types[50];
-static swig_module_info swig_module = {swig_types, 49, 0, 0, 0, 0};
+#define SWIGTYPE_p_db_err swig_types[2]
+#define SWIGTYPE_p_double swig_types[3]
+#define SWIGTYPE_p_f_p_FILE_p_q_const__char_v_______int swig_types[4]
+#define SWIGTYPE_p_f_p_q_const__ib_col_meta_t_p_q_const__unsigned_char_unsigned_long_p_q_const__unsigned_char_unsigned_long__int swig_types[5]
+#define SWIGTYPE_p_f_p_void_p_q_const__char_enum_ib_col_type_t_unsigned_long_enum_ib_col_attr_t__int swig_types[6]
+#define SWIGTYPE_p_f_p_void_p_q_const__char_enum_ib_tbl_fmt_t_unsigned_long_int_int__int swig_types[7]
+#define SWIGTYPE_p_f_p_void_p_q_const__char_int__int swig_types[8]
+#define SWIGTYPE_p_f_p_void_p_q_const__char_unsigned_long__int swig_types[9]
+#define SWIGTYPE_p_f_p_void_p_q_const__char_unsigned_long_unsigned_long_int__int swig_types[10]
+#define SWIGTYPE_p_float swig_types[11]
+#define SWIGTYPE_p_ib_cfg_type_t swig_types[12]
+#define SWIGTYPE_p_ib_col_attr_t swig_types[13]
+#define SWIGTYPE_p_ib_col_meta_t swig_types[14]
+#define SWIGTYPE_p_ib_col_type_t swig_types[15]
+#define SWIGTYPE_p_ib_crsr_struct swig_types[16]
+#define SWIGTYPE_p_ib_idx_sch_struct swig_types[17]
+#define SWIGTYPE_p_ib_lck_mode_t swig_types[18]
+#define SWIGTYPE_p_ib_match_mode_t swig_types[19]
+#define SWIGTYPE_p_ib_schema_visitor_t swig_types[20]
+#define SWIGTYPE_p_ib_schema_visitor_version_t swig_types[21]
+#define SWIGTYPE_p_ib_shutdown_t swig_types[22]
+#define SWIGTYPE_p_ib_srch_mode_t swig_types[23]
+#define SWIGTYPE_p_ib_tbl_fmt_t swig_types[24]
+#define SWIGTYPE_p_ib_tbl_sch_struct swig_types[25]
+#define SWIGTYPE_p_ib_tpl_struct swig_types[26]
+#define SWIGTYPE_p_ib_trx_level_t swig_types[27]
+#define SWIGTYPE_p_ib_trx_state_t swig_types[28]
+#define SWIGTYPE_p_ib_trx_struct swig_types[29]
+#define SWIGTYPE_p_int swig_types[30]
+#define SWIGTYPE_p_int16_t swig_types[31]
+#define SWIGTYPE_p_int32_t swig_types[32]
+#define SWIGTYPE_p_int64_t swig_types[33]
+#define SWIGTYPE_p_int8_t swig_types[34]
+#define SWIGTYPE_p_p_ib_crsr_struct swig_types[35]
+#define SWIGTYPE_p_p_ib_idx_sch_struct swig_types[36]
+#define SWIGTYPE_p_p_ib_tbl_sch_struct swig_types[37]
+#define SWIGTYPE_p_p_ib_tpl_struct swig_types[38]
+#define SWIGTYPE_p_p_p_char swig_types[39]
+#define SWIGTYPE_p_p_void swig_types[40]
+#define SWIGTYPE_p_uint16_t swig_types[41]
+#define SWIGTYPE_p_uint32_t swig_types[42]
+#define SWIGTYPE_p_uint64_t swig_types[43]
+#define SWIGTYPE_p_uint8_t swig_types[44]
+#define SWIGTYPE_p_unsigned_char swig_types[45]
+#define SWIGTYPE_p_unsigned_long swig_types[46]
+#define SWIGTYPE_p_void swig_types[47]
+static swig_type_info *swig_types[49];
+static swig_module_info swig_module = {swig_types, 48, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -1861,8 +1860,7 @@ struct timeval rb_time_timeval(VALUE);
 typedef struct ib_trx_struct {} Transaction;
 typedef struct ib_tbl_sch_struct {} TableSchema;
 typedef struct ib_idx_sch_struct {} IndexSchema;
-typedef struct crsr_struct {} Cursor;
-
+typedef struct ib_crsr_struct {} Cursor;
 
 
 #include <limits.h>
@@ -2098,8 +2096,17 @@ SWIG_FromCharPtr(const char *cptr)
   return SWIG_FromCharPtrAndSize(cptr, (cptr ? strlen(cptr) : 0));
 }
 
-SWIGINTERN void TableSchema_add_column(TableSchema *self,char const *col_name,ib_col_type_t col_type,ib_col_attr_t col_attr,ib_u16_t client_type,ib_ulint_t len){
-    return ob_table_schema_add_col(self,
+SWIGINTERN void Transaction_begin(Transaction *self,ib_trx_level_t iso_level){
+    self = ib_trx_begin(iso_level);
+  }
+SWIGINTERN void Transaction_commit(Transaction *self){
+    ib_trx_commit(self);
+  }
+SWIGINTERN void Transaction_lock_data_dictionary(Transaction *self){
+    ib_schema_lock_exclusive(self);
+  }
+SWIGINTERN void TableSchema_add_column(TableSchema *self,char const *col_name,ib_col_type_t col_type,ib_col_attr_t col_attr,ib_ulint_t client_type,ib_ulint_t len){
+    return ib_table_schema_add_col(self,
                                    col_name,
                                    col_type,
                                    col_attr,
@@ -6339,6 +6346,77 @@ fail:
 
 swig_class cTransaction;
 
+SWIGINTERN VALUE
+_wrap_Transaction_begin(int argc, VALUE *argv, VALUE self) {
+  Transaction *arg1 = (Transaction *) 0 ;
+  ib_trx_level_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  
+  if ((argc < 1) || (argc > 1)) {
+    rb_raise(rb_eArgError, "wrong # of arguments(%d for 1)",argc); SWIG_fail;
+  }
+  res1 = SWIG_ConvertPtr(self, &argp1,SWIGTYPE_p_ib_trx_struct, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), Ruby_Format_TypeError( "", "Transaction *","begin", 1, self )); 
+  }
+  arg1 = (Transaction *)(argp1);
+  ecode2 = SWIG_AsVal_int(argv[0], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), Ruby_Format_TypeError( "", "ib_trx_level_t","begin", 2, argv[0] ));
+  } 
+  arg2 = (ib_trx_level_t)(val2);
+  Transaction_begin(arg1,arg2);
+  return Qnil;
+fail:
+  return Qnil;
+}
+
+
+SWIGINTERN VALUE
+_wrap_Transaction_commit(int argc, VALUE *argv, VALUE self) {
+  Transaction *arg1 = (Transaction *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  
+  if ((argc < 0) || (argc > 0)) {
+    rb_raise(rb_eArgError, "wrong # of arguments(%d for 0)",argc); SWIG_fail;
+  }
+  res1 = SWIG_ConvertPtr(self, &argp1,SWIGTYPE_p_ib_trx_struct, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), Ruby_Format_TypeError( "", "Transaction *","commit", 1, self )); 
+  }
+  arg1 = (Transaction *)(argp1);
+  Transaction_commit(arg1);
+  return Qnil;
+fail:
+  return Qnil;
+}
+
+
+SWIGINTERN VALUE
+_wrap_Transaction_lock_data_dictionary(int argc, VALUE *argv, VALUE self) {
+  Transaction *arg1 = (Transaction *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  
+  if ((argc < 0) || (argc > 0)) {
+    rb_raise(rb_eArgError, "wrong # of arguments(%d for 0)",argc); SWIG_fail;
+  }
+  res1 = SWIG_ConvertPtr(self, &argp1,SWIGTYPE_p_ib_trx_struct, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), Ruby_Format_TypeError( "", "Transaction *","lock_data_dictionary", 1, self )); 
+  }
+  arg1 = (Transaction *)(argp1);
+  Transaction_lock_data_dictionary(arg1);
+  return Qnil;
+fail:
+  return Qnil;
+}
+
+
 #ifdef HAVE_RB_DEFINE_ALLOC_FUNC
 SWIGINTERN VALUE
 _wrap_Transaction_allocate(VALUE self) {
@@ -6384,7 +6462,7 @@ _wrap_TableSchema_add_column(int argc, VALUE *argv, VALUE self) {
   char *arg2 = (char *) 0 ;
   ib_col_type_t arg3 ;
   ib_col_attr_t arg4 ;
-  ib_u16_t arg5 ;
+  ib_ulint_t arg5 ;
   ib_ulint_t arg6 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -6395,8 +6473,8 @@ _wrap_TableSchema_add_column(int argc, VALUE *argv, VALUE self) {
   int ecode3 = 0 ;
   int val4 ;
   int ecode4 = 0 ;
-  void *argp5 ;
-  int res5 = 0 ;
+  unsigned long val5 ;
+  int ecode5 = 0 ;
   unsigned long val6 ;
   int ecode6 = 0 ;
   
@@ -6423,17 +6501,11 @@ _wrap_TableSchema_add_column(int argc, VALUE *argv, VALUE self) {
     SWIG_exception_fail(SWIG_ArgError(ecode4), Ruby_Format_TypeError( "", "ib_col_attr_t","add_column", 4, argv[2] ));
   } 
   arg4 = (ib_col_attr_t)(val4);
-  {
-    res5 = SWIG_ConvertPtr(argv[3], &argp5, SWIGTYPE_p_uint16_t,  0 );
-    if (!SWIG_IsOK(res5)) {
-      SWIG_exception_fail(SWIG_ArgError(res5), Ruby_Format_TypeError( "", "ib_u16_t","add_column", 5, argv[3] )); 
-    }  
-    if (!argp5) {
-      SWIG_exception_fail(SWIG_ValueError, Ruby_Format_TypeError("invalid null reference ", "ib_u16_t","add_column", 5, argv[3]));
-    } else {
-      arg5 = *((ib_u16_t *)(argp5));
-    }
-  }
+  ecode5 = SWIG_AsVal_unsigned_SS_long(argv[3], &val5);
+  if (!SWIG_IsOK(ecode5)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode5), Ruby_Format_TypeError( "", "ib_ulint_t","add_column", 5, argv[3] ));
+  } 
+  arg5 = (ib_ulint_t)(val5);
   ecode6 = SWIG_AsVal_unsigned_SS_long(argv[4], &val6);
   if (!SWIG_IsOK(ecode6)) {
     SWIG_exception_fail(SWIG_ArgError(ecode6), Ruby_Format_TypeError( "", "ib_ulint_t","add_column", 6, argv[4] ));
@@ -6535,7 +6607,7 @@ _wrap_Cursor_allocate(VALUE self) {
 #endif
     
     
-    VALUE vresult = SWIG_NewClassInstance(self, SWIGTYPE_p_crsr_struct);
+    VALUE vresult = SWIG_NewClassInstance(self, SWIGTYPE_p_ib_crsr_struct);
 #ifndef HAVE_RB_DEFINE_ALLOC_FUNC
     rb_obj_call_init(vresult, argc, argv);
 #endif
@@ -6689,7 +6761,6 @@ fail:
 
 static swig_type_info _swigt__p_FILE = {"_p_FILE", "FILE *|ib_msg_stream_t", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_char = {"_p_char", "char *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_crsr_struct = {"_p_crsr_struct", "Cursor *|struct crsr_struct *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_db_err = {"_p_db_err", "ib_err_t *|enum db_err *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_double = {"_p_double", "double *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_f_p_FILE_p_q_const__char_v_______int = {"_p_f_p_FILE_p_q_const__char_v_______int", "int (*)(FILE *,char const *,...)|ib_msg_log_t", 0, 0, (void*)0, 0};
@@ -6704,7 +6775,7 @@ static swig_type_info _swigt__p_ib_cfg_type_t = {"_p_ib_cfg_type_t", "enum ib_cf
 static swig_type_info _swigt__p_ib_col_attr_t = {"_p_ib_col_attr_t", "enum ib_col_attr_t *|ib_col_attr_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ib_col_meta_t = {"_p_ib_col_meta_t", "ib_col_meta_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ib_col_type_t = {"_p_ib_col_type_t", "enum ib_col_type_t *|ib_col_type_t *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_ib_crsr_struct = {"_p_ib_crsr_struct", "struct ib_crsr_struct *|ib_crsr_t", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_ib_crsr_struct = {"_p_ib_crsr_struct", "Cursor *|struct ib_crsr_struct *|ib_crsr_t", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ib_idx_sch_struct = {"_p_ib_idx_sch_struct", "ib_idx_sch_t|IndexSchema *|struct ib_idx_sch_struct *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ib_lck_mode_t = {"_p_ib_lck_mode_t", "enum ib_lck_mode_t *|ib_lck_mode_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ib_match_mode_t = {"_p_ib_match_mode_t", "enum ib_match_mode_t *|ib_match_mode_t *", 0, 0, (void*)0, 0};
@@ -6740,7 +6811,6 @@ static swig_type_info _swigt__p_void = {"_p_void", "void *", 0, 0, (void*)0, 0};
 static swig_type_info *swig_type_initial[] = {
   &_swigt__p_FILE,
   &_swigt__p_char,
-  &_swigt__p_crsr_struct,
   &_swigt__p_db_err,
   &_swigt__p_double,
   &_swigt__p_f_p_FILE_p_q_const__char_v_______int,
@@ -6791,7 +6861,6 @@ static swig_type_info *swig_type_initial[] = {
 
 static swig_cast_info _swigc__p_FILE[] = {  {&_swigt__p_FILE, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_char[] = {  {&_swigt__p_char, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_crsr_struct[] = {  {&_swigt__p_crsr_struct, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_db_err[] = {  {&_swigt__p_db_err, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_double[] = {  {&_swigt__p_double, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_f_p_FILE_p_q_const__char_v_______int[] = {  {&_swigt__p_f_p_FILE_p_q_const__char_v_______int, 0, 0, 0},{0, 0, 0, 0}};
@@ -6842,7 +6911,6 @@ static swig_cast_info _swigc__p_void[] = {  {&_swigt__p_void, 0, 0, 0},{0, 0, 0,
 static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_FILE,
   _swigc__p_char,
-  _swigc__p_crsr_struct,
   _swigc__p_db_err,
   _swigc__p_double,
   _swigc__p_f_p_FILE_p_q_const__char_v_______int,
@@ -7407,6 +7475,9 @@ SWIGEXPORT void Init_rlibinnodb(void) {
   SWIG_TypeClientData(SWIGTYPE_p_ib_trx_struct, (void *) &cTransaction);
   rb_define_alloc_func(cTransaction.klass, _wrap_Transaction_allocate);
   rb_define_method(cTransaction.klass, "initialize", _wrap_new_Transaction, -1);
+  rb_define_method(cTransaction.klass, "begin", _wrap_Transaction_begin, -1);
+  rb_define_method(cTransaction.klass, "commit", _wrap_Transaction_commit, -1);
+  rb_define_method(cTransaction.klass, "lock_data_dictionary", _wrap_Transaction_lock_data_dictionary, -1);
   cTransaction.mark = 0;
   cTransaction.destroy = (void (*)(void *)) free_Transaction;
   cTransaction.trackObjects = 0;
@@ -7429,7 +7500,7 @@ SWIGEXPORT void Init_rlibinnodb(void) {
   cIndexSchema.trackObjects = 0;
   
   cCursor.klass = rb_define_class_under(mRlibinnodb, "Cursor", rb_cObject);
-  SWIG_TypeClientData(SWIGTYPE_p_crsr_struct, (void *) &cCursor);
+  SWIG_TypeClientData(SWIGTYPE_p_ib_crsr_struct, (void *) &cCursor);
   rb_define_alloc_func(cCursor.klass, _wrap_Cursor_allocate);
   rb_define_method(cCursor.klass, "initialize", _wrap_new_Cursor, -1);
   cCursor.mark = 0;

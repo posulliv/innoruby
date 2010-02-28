@@ -73,9 +73,18 @@ class InnoDB
     ret
   end
 
-  def begin_transaction(trx_level)
+  def delete_table_schema(tbl_sch)
+    check_return_code(Lib.ib_table_schema_delete(tbl_sch))
+  end
+
+  def create_table(trx, tbl_sch)
+    table_id = Integer
+    check_return_code(Lib.ib_table_create(trx, tbl_sch, table_id))
+    table_id
+  end
+
+  def create_transaction()
     ret = Lib::Transaction.new
-    ret = Lib.ib_trx_begin(trx_level)
     ret
   end
 
